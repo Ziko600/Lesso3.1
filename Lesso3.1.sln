@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesso3.1", "Lesso3.1.csproj", "{CDD36FF6-AE08-4514-ACC3-09E76FB3D87C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDD36FF6-AE08-4514-ACC3-09E76FB3D87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD36FF6-AE08-4514-ACC3-09E76FB3D87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD36FF6-AE08-4514-ACC3-09E76FB3D87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD36FF6-AE08-4514-ACC3-09E76FB3D87C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCEAC707-8DC0-40DF-A63C-146C235DB4ED}
+	EndGlobalSection
+EndGlobal
