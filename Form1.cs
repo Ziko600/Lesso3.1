@@ -12,6 +12,10 @@ namespace Lesso3._1
             InitializeComponent();
             this.productName = name;
             MessageBox.Show("Test");
+            MessageBox.Show("Test");
+            MessageBox.Show("Test");
+            MessageBox.Show("Test");
+            MessageBox.Show("Test");
             this.originCountry = country;
             this.productCost = cost;
             listform1.Items.Add(name);
