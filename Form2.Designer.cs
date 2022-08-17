@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.productname = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.product_name = new System.Windows.Forms.TextBox();
+            this.origin_country = new System.Windows.Forms.TextBox();
+            this.product_cost = new System.Windows.Forms.TextBox();
             this.origincountry = new System.Windows.Forms.Label();
             this.productcost = new System.Windows.Forms.Label();
             this.okbtn = new System.Windows.Forms.Button();
@@ -49,29 +49,29 @@
             this.productname.TabIndex = 0;
             this.productname.Text = "Product Name:";
             // 
-            // textBox1
+            // product_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 84);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 29);
-            this.textBox1.TabIndex = 1;
+            this.product_name.Location = new System.Drawing.Point(47, 84);
+            this.product_name.Multiline = true;
+            this.product_name.Name = "product_name";
+            this.product_name.Size = new System.Drawing.Size(169, 29);
+            this.product_name.TabIndex = 1;
             // 
-            // textBox2
+            // origin_country
             // 
-            this.textBox2.Location = new System.Drawing.Point(47, 144);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 29);
-            this.textBox2.TabIndex = 2;
+            this.origin_country.Location = new System.Drawing.Point(47, 144);
+            this.origin_country.Multiline = true;
+            this.origin_country.Name = "origin_country";
+            this.origin_country.Size = new System.Drawing.Size(169, 29);
+            this.origin_country.TabIndex = 2;
             // 
-            // textBox3
+            // product_cost
             // 
-            this.textBox3.Location = new System.Drawing.Point(47, 215);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(169, 29);
-            this.textBox3.TabIndex = 3;
+            this.product_cost.Location = new System.Drawing.Point(47, 215);
+            this.product_cost.Multiline = true;
+            this.product_cost.Name = "product_cost";
+            this.product_cost.Size = new System.Drawing.Size(169, 29);
+            this.product_cost.TabIndex = 3;
             // 
             // origincountry
             // 
@@ -99,6 +99,7 @@
             this.okbtn.TabIndex = 6;
             this.okbtn.Text = "Ok";
             this.okbtn.UseVisualStyleBackColor = true;
+            this.okbtn.Click += new System.EventHandler(this.okbtn_Click);
             // 
             // canselbtn
             // 
@@ -108,6 +109,7 @@
             this.canselbtn.TabIndex = 7;
             this.canselbtn.Text = "Cancel";
             this.canselbtn.UseVisualStyleBackColor = true;
+            this.canselbtn.Click += new System.EventHandler(this.canselbtn_Click);
             // 
             // Form2
             // 
@@ -118,9 +120,9 @@
             this.Controls.Add(this.okbtn);
             this.Controls.Add(this.productcost);
             this.Controls.Add(this.origincountry);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.product_cost);
+            this.Controls.Add(this.origin_country);
+            this.Controls.Add(this.product_name);
             this.Controls.Add(this.productname);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
@@ -132,13 +134,13 @@
 
         #endregion
 
-        private Label productname;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private Label origincountry;
-        private Label productcost;
-        private Button okbtn;
-        private Button canselbtn;
+        public Label productname;
+        public TextBox product_name;
+        public TextBox origin_country;
+        public TextBox product_cost;
+        public Label origincountry;
+        public Label productcost;
+        public Button okbtn;
+        public Button canselbtn;
     }
 }

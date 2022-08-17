@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.listform1 = new System.Windows.Forms.ListBox();
-            this.addproduct = new System.Windows.Forms.Button();
             this.editproduct = new System.Windows.Forms.Button();
             this.removeproduct = new System.Windows.Forms.Button();
             this.clearlist = new System.Windows.Forms.Button();
@@ -42,17 +41,8 @@
             this.listform1.ItemHeight = 15;
             this.listform1.Location = new System.Drawing.Point(29, 25);
             this.listform1.Name = "listform1";
-            this.listform1.Size = new System.Drawing.Size(220, 259);
+            this.listform1.Size = new System.Drawing.Size(220, 304);
             this.listform1.TabIndex = 0;
-            // 
-            // addproduct
-            // 
-            this.addproduct.Location = new System.Drawing.Point(29, 307);
-            this.addproduct.Name = "addproduct";
-            this.addproduct.Size = new System.Drawing.Size(220, 31);
-            this.addproduct.TabIndex = 1;
-            this.addproduct.Text = "Add Product";
-            this.addproduct.UseVisualStyleBackColor = true;
             // 
             // editproduct
             // 
@@ -62,6 +52,7 @@
             this.editproduct.TabIndex = 2;
             this.editproduct.Text = "Edit Product";
             this.editproduct.UseVisualStyleBackColor = true;
+            this.editproduct.Click += new System.EventHandler(this.editproduct_Click);
             // 
             // removeproduct
             // 
@@ -71,6 +62,7 @@
             this.removeproduct.TabIndex = 3;
             this.removeproduct.Text = "Remove Product";
             this.removeproduct.UseVisualStyleBackColor = true;
+            this.removeproduct.Click += new System.EventHandler(this.removeproduct_Click);
             // 
             // clearlist
             // 
@@ -89,7 +81,6 @@
             this.Controls.Add(this.clearlist);
             this.Controls.Add(this.removeproduct);
             this.Controls.Add(this.editproduct);
-            this.Controls.Add(this.addproduct);
             this.Controls.Add(this.listform1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -100,10 +91,9 @@
 
         #endregion
 
-        private ListBox listform1;
-        private Button addproduct;
-        private Button editproduct;
-        private Button removeproduct;
-        private Button clearlist;
+        public ListBox listform1;
+        public Button editproduct;
+        public Button removeproduct;
+        public Button clearlist;
     }
 }
